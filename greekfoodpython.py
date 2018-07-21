@@ -11,7 +11,7 @@ def loadImages(path):
         img = PImage.open(path + image)
         loadedImages.append(img)
 
-path = "C:\Users\James Mulligan\Desktop\greekfood\images"
+path = "C:/Users/James Mulligan/Desktop/greekfood/images"
 
 # your images in an array
 imgs = loadImages(path)
