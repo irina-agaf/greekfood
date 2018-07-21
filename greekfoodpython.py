@@ -1,13 +1,21 @@
-$a = 1;
-	echo '<table><tr>';
-	while($row = mysql_fetch_assoc($image)){    
-	if($a <= 3){ //number of cells in row    
-	echo '<td>'.$row['image'].'</td>';  
- 	$a++;
-	}    
-	else {    
-	echo '</tr>\n<tr>'.'<td>'.$row['image'].'</td>';
-$a = 1; 
-    }
-}
-echo '</tr></table>';
+#!/usr/bin/python
+from os import listdir
+from PIL import Image as PImage
+
+def loadImages(path):
+    # return array of images
+
+    imagesList = listdir(path)
+    loadedImages = []
+    for image in imagesList:
+        img = PImage.open(path + image)
+        loadedImages.append(img)
+
+path = "C:\Users\James Mulligan\Desktop\greekfood\images"
+
+# your images in an array
+imgs = loadImages(path)
+
+for img in imgs:
+    # you can show every image
+    img.show()
