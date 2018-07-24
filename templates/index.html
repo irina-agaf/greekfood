@@ -1,53 +1,44 @@
 <!DOCTYPE html>
-<!-- <html> -->
 <head>
-  <title>Greek food</title>
-  <style>
-    body {
-      text-align: center;
-      color: black;
-      font-family: helvetica;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5;
-    }
-    p {
-      font-size: 22px;
-    }
-  <!-- </style> -->
+<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+<link rel="stylesheet" href="dist/css/bootstrap.css">
+<link rel="stylesheet" href="./gfood.css">
+<script src="/assets/jquery.js"></script>
 </head>
 <body>
-<header>
-  <!---<img src="insert image here">-->
-  <h1>Greek food expert</h1> 
-  <h2>We will help to match best greek dishes with your food preferences</h2>
-</header>
-    <!--- boxes to pick food preference -->
-  <ol>
-    <li>Ordered lists (&lt;ol&gt;) - displays a numbered list</li>
-    <li>Unordered lists (&lt;ul&gt;) - displays a list of bullet points</li>
-  </ol>
-  <ul>
-    <li>An opening list tag</li>
-    <li>Many list items (&lt;li&gt;)</li>
-    <li>A closing list tags</li>
-  </ul>
-    <h2>Tables</h2>
-    <table class='table'>
-    <tr>
-      <th>Name</th>
-      <th>Salads</th>
-    </tr>
-    <tr>
-      <td>Mains</td>
-      <td>Deserts</td>
-    </tr>
-    <tr>
-      <td>Drinks</td>
-      <td>Soups</td>
-    </tr>
+<h1>Greek food expert</h1>
+<h2>We will help to match best greek dishes with your food preferences</h2>
+<form role='form' class='form-inline'>
+    <div class="form-group">
+          <label for="button">What kind of food do you like?</label>
+          <button type="submit" class='btn btn-success'>Veg</button>
+          <button type="submit" class='btn btn-success'>Non-Veg</button>
+          </div>
+          </form>
+      <div class="row">
+      <div class='col-sm-3'>
+   <div class="first show-description">
+    <p>Souvlaki <span class='veg'>non-veg</span><br /><small>(Lit: 'little skewer') Anything grilled on a skewer (lamb, chicken, pork, swordfish, shrimp). Most common is lamb, pork, and chicken, typically marinated in oil, salt, pepper, oregano and lemon. Also known as kalamaki (καλαμάκι). </small></p>
+</div>
+ <div class='col-sm-3'>
+<div class="second show-description">
+  <p>Moussaka <span class='veg'>non-veg</span><br /><small>Casserole made of (typically fried) aubergine, potato, and spiced minced meat. There are other, less common variations besides eggplant, such as zucchini.</small></p>
+</div>
+   <div class='col-sm-3'>
+<div class="third show-description">
+  <p>Greek salad <span class='veg'>veg</span><br /><small>Greek salad consists of tomatoes, sliced cucumbers, onion, feta cheese, and olives (usually Kalamata olives), typically seasoned with salt and oregano, and dressed with olive oil. Sliced capsicum, usually green, is often added also.</small></p>
+</div> </div>
+<div id='social-buttons'>
+    <button class="btn btn-lg btn-twitter">Twitter</button>
+    <button class="btn btn-lg btn-facebook">Facebook</button>
+    <button class="btn btn-lg btn-pinterest">Pinterest</button>
+    </div>
+<script>
+    $('div').on('click', function() {
+        $(this).toggleClass('show-description');
+    });
+</script>
   
-<p><b> {{foodimages}} </b>  </p>
+<p><b> print imgs:{{foodimages}} </b>  </p>
 
-  </table>
 </body>

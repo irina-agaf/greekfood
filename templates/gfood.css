@@ -1,0 +1,109 @@
+
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  /*background: #232323;*/
+  background: #bbbbbb
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Merienda', cursive;
+  text-align: center;
+  font-size: 65px;
+  color: #232322;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #232322;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+small {
+  color: white;
+}
+.show-description p {
+  height: 150px;
+}
+.show-description small {
+  opacity: 1;
+}
+  
+small {
+  opacity: 0;
+}
+/*.first{
+  background-image: url("https://zeusgreekstreet.com/images/home1.jpg");
+}
+.second{
+  background-image: url("https://travelgreecetraveleurope.com/wp-content/uploads/2016/07/Greek-Food-Experiences-Athens-15-1.jpg");
+}
+.third{
+  background-image: url("https://cdn.vox-cdn.com/thumbor/A6xFyu_MKEC97KHsqs9EvQKb6aI=/0x0:722x481/1200x900/filters:focal(304x184:418x298)/cdn.vox-cdn.com/uploads/chorus_image/image/59082791/vt07.0.jpg");
+}*/
+.veg {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+    }
+  #social-buttons {
+  margin-top: 50px;
+}
+.btn-twitter {
+  background-color: #00acee;
+  border-color: #009ad5;
+  color: white;
+}
+.btn-facebook {
+  background-color: #4868ac;
+  border-color: #314776;
+  color: white;
+}
+.btn-pinterest {
+  background-color: #b62f26;
+  border-color: #b62f26;
+  color: white;
+}

@@ -28,6 +28,5 @@ def home():
 
 	return render_template(
         "index.html", foodimages=imgs)  # render_template method is a special function flask which redirect to the html file mentioned in the paramter
-
 if __name__ == "__main__":
 	app.run(debug=True)
