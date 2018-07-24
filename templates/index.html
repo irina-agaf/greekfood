@@ -39,6 +39,10 @@
     });
 </script>
   
-<p><b> print imgs:{{foodimages}} </b>  </p>
+<p><b> {%for image in foodimages%} 
+  <img src="../static/images/{{image}}">
+  {%endfor%}
+   </b> </p>
+  }
 
 </body>

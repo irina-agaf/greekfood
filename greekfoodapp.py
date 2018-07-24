@@ -12,7 +12,7 @@ def loadImages(path):
     imagesList = listdir(path)
     return imagesList
 
-path = "C:/Users/James Mulligan/Desktop/greekfood/images"
+path = "C:/Users/James Mulligan/Desktop/greekfood/static/images"
 
 # your images in an array
 #imgs = loadImages(path)
