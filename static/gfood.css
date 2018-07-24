@@ -13,6 +13,10 @@ div {
   margin: 40px 0 0 0;
   border-radius: 12px;
 }
+.query {
+  height: 50px;
+  text-align: center;
+}
 h1 {
   font-family: 'Merienda', cursive;
   text-align: center;
@@ -55,18 +59,22 @@ small {
 small {
   opacity: 0;
 }
-/*.first{
-  background-image: url("https://zeusgreekstreet.com/images/home1.jpg");
+
+.first{
+  background-image: url("file:///C:/greekfood/static/images/Souvlaki-meat.jpg");
 }
 .second{
-  background-image: url("https://travelgreecetraveleurope.com/wp-content/uploads/2016/07/Greek-Food-Experiences-Athens-15-1.jpg");
+  background-image: url("file:///C:/greekfood/static/images/Musaka-meat.jpg");
 }
 .third{
-  background-image: url("https://cdn.vox-cdn.com/thumbor/A6xFyu_MKEC97KHsqs9EvQKb6aI=/0x0:722x481/1200x900/filters:focal(304x184:418x298)/cdn.vox-cdn.com/uploads/chorus_image/image/59082791/vt07.0.jpg");
-}*/
-.veg {
-  float: right;
+  background-image: url("file:///C:/greekfood/static/images/Greek-salad-veg.jpg");
 }
+.forth{
+  background-image: url("file:///C:/greekfood/static/images/Yemista-veg.jpg");
+}
+/*.veg {
+  float: right;
+}*/
 @media (max-width: 500px) {
   h1 {
     font-size: 50px;
@@ -106,4 +114,7 @@ small {
   background-color: #b62f26;
   border-color: #b62f26;
   color: white;
+}
+.show {
+  display: none;
 }

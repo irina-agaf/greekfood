@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <head>
 <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
-<link rel="stylesheet" href="dist/css/bootstrap.css">
+<!-- <link rel="stylesheet" href="dist/css/bootstrap.css"> -->
 <link rel="stylesheet" href="../static/gfood.css">
-<script src="/assets/jquery.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 </head>
 <body>
 <h1>Greek food expert</h1>
 <h2>We will help to match best greek dishes with your food preferences</h2>
-<form role='form' class='form-inline'>
-    <div class="form-group">
+    <div class="form-group query">
           <label for="button">What kind of food do you like?</label>
-          <button type="submit" class='btn btn-success'>Veg</button>
-          <button type="submit" class='btn btn-success'>Non-Veg</button>
+          <button id="veg" type="submit" class='btn btn-success'>Veg</button>
+          <button id="non-veg" type="submit" class='btn btn-success'>Non-Veg</button>
           </div>
           </form>
-      <div class="row">
-      <div class='col-sm-3'>
-   <div class="first show-description">
-    <p>Souvlaki <span class='veg'>non-veg</span><br /><small>(Lit: 'little skewer') Anything grilled on a skewer (lamb, chicken, pork, swordfish, shrimp). Most common is lamb, pork, and chicken, typically marinated in oil, salt, pepper, oregano and lemon. Also known as kalamaki (καλαμάκι). </small></p>
+    <div class="row">
+        <div class="first meat">
+   	    <p>Souvlaki <span class='meat'>non-veg</span><br /><small>(Lit: 'little skewer') Anything grilled on a skewer (lamb, chicken, pork, swordfish, shrimp). Most common is lamb, pork, and chicken, typically marinated in oil, salt, pepper, oregano and lemon. Also known as kalamaki (καλαμάκι). </small></p>
 </div>
- <div class='col-sm-3'>
-<div class="second show-description">
-  <p>Moussaka <span class='veg'>non-veg</span><br /><small>Casserole made of (typically fried) aubergine, potato, and spiced minced meat. There are other, less common variations besides eggplant, such as zucchini.</small></p>
+<div class="second meat">
+  <!-- <img src="C:\greekfood\static\images\Musaka-meat.jpg"> -->
+  <p>Moussaka <span class='meat'>non-veg</span><br /><small>Casserole made of (typically fried) aubergine, potato, and spiced minced meat. There are other, less common variations besides eggplant, such as zucchini.</small></p>
 </div>
-   <div class='col-sm-3'>
-<div class="third show-description">
-  <p>Greek salad <span class='veg'>veg</span><br /><small>Greek salad consists of tomatoes, sliced cucumbers, onion, feta cheese, and olives (usually Kalamata olives), typically seasoned with salt and oregano, and dressed with olive oil. Sliced capsicum, usually green, is often added also.</small></p>
-</div> </div>
+<div class="third herb">
+  <p>Greek salad <span class='herb'>veg</span><br /><small>Greek salad consists of tomatoes, sliced cucumbers, onion, feta cheese, and olives (usually Kalamata olives), typically seasoned with salt and oregano, and dressed with olive oil. Sliced capsicum, usually green, is often added also.</small></p>
+</div>
+<div class="forth herb">
+  <p>Yemista <span class='herb'>veg</span><br /><small>Baked stuffed vegetables. Usually tomatoes, peppers, or other vegetables such as potato and zucchini, hollowed out and baked with a rice and herb filling. Minced meat is also commonly used in the filling.</small></p>
+</div> 
 <div id='social-buttons'>
     <button class="btn btn-lg btn-twitter">Twitter</button>
     <button class="btn btn-lg btn-facebook">Facebook</button>
     <button class="btn btn-lg btn-pinterest">Pinterest</button>
     </div>
 <script>
-    $('div').on('click', function() {
-        $(this).toggleClass('show-description');
+    $('.row').on('click', function() {
+    	$(this).toggleClass('show-description');
     });
+    $('#veg').on('click', function() {$(".meat").toggleClass("show");});
+    $('#non-veg').on('click', function() {$(".herb").toggleClass("show");});
 </script>
-  
-<p><b> {%for image in foodimages%} 
-  <img src="../static/images/{{image}}">
-  {%endfor%}
-   </b> </p>
-  }
-
 </body>
