@@ -61,16 +61,16 @@ small {
 }
 
 .first{
-  background-image: url(https://www.dreamstime.com/royalty-free-stock-image-greek-souvlaki-image28536826.jpg);
+  background-image: url(../static/images/Souvlaki-meat.jpg);
 }
 .second{
   background-image: url(../static/images/Musaka-meat.jpg);
 }
 .third{
-  background-image: url("file:///C:/greekfood/static/images/Greek-salad-veg.jpg");
+  background-image: url(../static/images/Greek-salad-veg.jpg);
 }
 .forth{
-  background-image: url("file:///C:/greekfood/static/images/Yemista-veg.jpg");
+  background-image: url(../static/images/Yemista-veg.jpg);
 }
 /*.veg {
   float: right;
