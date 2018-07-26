@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
   max-width: 600px;
   /*background: #232323;*/
-  background: #bbbbbb
+  background: white
 }
 
 label {
@@ -137,6 +137,6 @@ small {
   border-color: #b62f26;
   color: white;
 }
-.hide {
+.show {
   display: none;
 }
