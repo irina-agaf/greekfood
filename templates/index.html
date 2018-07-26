@@ -41,8 +41,12 @@
     $('.row').on('click', function() {
     	$(this).toggleClass('show-description');
     });
-    $('#veg').on('click', function() {$(".meat").toggleClass("show");});
-    $('#non-veg').on('click', function() {$(".herb").toggleClass("show");});
+    $('#veg').on('click', function() {
+      $(".meat").addClass("hide");
+      $(".herb").removeClass("hide");
+    });
+
+    $('#non-veg').on('click', function() {$(".herb").addClass("hide");});
 </script>
 
 </body>
