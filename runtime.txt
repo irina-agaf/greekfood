@@ -1,2 +1,0 @@
-2 lines (1 sloc)  14 Bytes
-python-3.7
