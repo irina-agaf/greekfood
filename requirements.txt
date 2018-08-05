@@ -1,3 +1,0 @@
-mkdir greek-food-app
-cd greek-food-app
-npm init --yes
